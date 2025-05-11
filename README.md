@@ -42,6 +42,17 @@ sql_pytest_demo/
 ├── requirements.txt # Dependencies
 └── README.md # Project documentation
 
+## Prepare the test environment
+
+# Navigate to the project directory
+cd sql_pytest_demo
+
+# Create a virtual environment named `.venv`
+python3 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
+
 
 ## 🧪 Running Tests
 
