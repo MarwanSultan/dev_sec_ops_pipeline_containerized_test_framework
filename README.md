@@ -33,7 +33,7 @@ This project models a simplified banking system with `Customers` and `Transactio
 # Navigate to the project directory
 cd sql_pytest_demo
 
-# Create a virtual environment named `.venv`
+### Create a virtual environment named `.venv`
 python3 -m venv .venv
 
 # Activate the virtual environment
