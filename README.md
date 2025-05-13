@@ -28,20 +28,6 @@ This project models a simplified banking system with `Customers` and `Transactio
 
 ## 📂 Project Structure
 
-sql_pytest_demo/
-├── src/
-│ ├── database.py # SQLAlchemy setup and session manager
-│ ├── models.py # ORM models for Customer and Transaction
-│ ├── seed_data.py # Script to populate the database using Faker
-├── test/
-│ ├── conftest.py # Pytest fixtures for db setup and data generation
-│ ├── test_users.py # Test suite for Customers
-│ ├── test_transactions.py# Test suite for Transactions
-│ ├── test_fraud_detection.py # Optional test for detecting fraud
-├── pytest.ini # Pytest configuration
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
-
 ## Prepare the test environment
 
 # Navigate to the project directory
