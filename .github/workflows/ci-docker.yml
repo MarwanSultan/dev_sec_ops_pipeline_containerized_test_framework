@@ -1,0 +1,23 @@
+name: CI with Docker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        docker build -t sql-pytest-app .
+
+    - name: Run tests inside Docker container
+      run: |
+        docker run --rm sql-pytest-app
