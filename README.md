@@ -1,4 +1,4 @@
-# DevSecOps Pipeline Best Practices
+# DevSecOps Pipeline Containerized Test Framework
 
 This repository demonstrates a simple and effective DevSecOps pipeline that integrates security into every stage of the CI/CD process.
 
