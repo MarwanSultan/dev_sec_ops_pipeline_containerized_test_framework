@@ -1,45 +1,29 @@
-# Mock Banking Test Framework
+# DevSecOps Pipeline Best Practices
 
-A lightweight Python framework that simulates a banking environment using SQLAlchemy, Faker, and Pytest to test SQL transactions, generate synthetic data, and validate business logic through automated tests.
+This repository demonstrates a simple and effective DevSecOps pipeline that integrates security into every stage of the CI/CD process.
 
 ## Overview
 
-This project models a simplified banking system with `Customers` and `Transactions`, allowing testers and developers to:
+This project showcases how to:
 
-- Generate large datasets with realistic-looking customer and transaction records.
-- Run automated tests to validate SQL queries, database integrity, and edge cases.
-- Experiment with fraud detection logic (optional AI support).
+- Build a CI/CD pipeline using GitHub Actions
+- Integrate security testing tools (e.g., SAST, dependency scanning)
+- Use Docker to create consistent test environments
+- Apply security best practices throughout development and deployment
 
-## Features
-
-- **Mock Schema**: Customers and Transactions tables with ORM relationships.
-- **Data Generation**: Faker-powered creation of thousands of records.
-- **Automated Testing**: Pytest-based test suite for validating data and SQL behavior.
-- **Fraud Detection Test**: Optional tests to detect suspicious financial activity.
-- **Simple DB Config**: SQLite by default, extensible to PostgreSQL, MySQL, etc.
-
-## Technologies Used
-
-- Python 3.10+
-- SQLAlchemy
-- Pytest
-- Faker
-- SQLite
-
-## Prepare the test environment
-
-   ### 1. Navigate to the project directory
-      cd sql_pytest_demo
-   
-   ### 2. Create a virtual environment named `.venv`
-      python3 -m venv .venv
-
-## Activate the virtual environment
-source .venv/bin/activate
+## Project Structure
 
 
-## Install dependencies
-   pip install -r requirements.txt
+## Tools Used
 
-## Run Tests
-   pytest
+- **GitHub Actions** — CI/CD automation
+- **Docker** — containerized testing environment
+- **Bandit** (Python SAST) / **Trivy** (container scanning)
+
+## How to Run
+
+To build and test locally using Docker:
+
+```bash
+docker build -t devsecops-app .
+docker run --rm devsecops-app
